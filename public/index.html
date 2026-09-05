@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supermario</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="game-container">
+    <div id="game-viewport">
+      <div id="game-world">
+      </div>
+      <div id="hud">
+        <div> SCORE <span id="score-val">0</span></div>
+        <div> COINS <span id="coins-val">0</span></div>
+        <div> HI-SCORE <span id="hi-score-val">0</span></div>
+      </div>
+    </div>
+    <div id="start-screen" class="overlay-screen">
+      <div class="menu-box">
+        <h1>
+          MARIO RUN WEB
+        </h1>
+        <p>Not Finite Auto Runner</p>
+        <button id="start-btn" class="action-btn">START BISH</button>
+      </div>
+    </div>
+    <div id="game-over-screen" class="overlay-screen hidden">
+      <div class="menu-box">
+        <h2 class="danger-text">GAME OVER</h2>
+        <p>You fell! Skill issue.</p>
+        <p>Final score: <span id="final-score"></span></p>
+        <p>High score: <span id="high-score"></span></p>
+        <button id="restart-btn" class="action-btn">RETRY</button>
+      </div>
+    </div>
+
+  </div>
+  <script src="game.js"></script>
+</body>
+
+</html>
